@@ -14,3 +14,15 @@ Para visualizar en el navegador la app ejecutar
 
 ### `npm start`
 
+
+Para ejecutar pruebas unitarias ejecutar  
+
+### `npm run test`
+
+Ó con JEST visualizacion de covertura.
+
+### `npm run test -- --coverage`
+
+El comando creara una carpera coverage, para un analisis mas profundo visualizar en el navegador el archivo  
+
+### `coverage/lcov-report/index.html`
