@@ -1,5 +1,5 @@
 
-// { name: 'Gerardo', id: 1 }
+// { name: 'Pedro', id: 1 }
 export const createStore = () => {
   let store = []
 

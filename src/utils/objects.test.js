@@ -7,13 +7,13 @@ describe('Test a Objetos', () => {
     const store = createStore()
 
     store.addItem({
-      name: 'Gerardo',
+      name: 'Pedro',
       id: 1,
       country: 'Mexico'
     })
 
     expect(store.getStore()[0]).toEqual({
-      name: 'Gerardo',
+      name: 'Pedro',
       id: 1,
       country: 'Mexico'
     })
@@ -25,23 +25,23 @@ describe('Test a Objetos', () => {
     const store = createStore()
 
     store.addItem({
-      name: 'Gerardo',
+      name: 'Pedro',
       id: 1,
       country: 'Mexico'
     })
 
     expect(store.getById(1)).toEqual({
-      name: 'Gerardo',
+      name: 'Pedro',
       id: 1,
       country: 'Mexico'
     })
 
     expect(store.getById(1)).toMatchObject({
-      name: 'Gerardo',
+      name: 'Pedro',
       id: 1
     })
   
-    expect(store.getById(1)).toHaveProperty('name', 'Gerardo')
+    expect(store.getById(1)).toHaveProperty('name', 'Pedro')
 
   })
 

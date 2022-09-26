@@ -4,7 +4,7 @@ describe('Haciendo test a operaciones asinctronas', () => {
 
   test('Haciendo test a callback', (done) => {
     getDataCallback((name) => {
-      expect(name).toBe('Gerardo Gallegos')
+      expect(name).toBe('Pedro Cubillos')
       done()
     })
   })
@@ -12,13 +12,13 @@ describe('Haciendo test a operaciones asinctronas', () => {
   test('Haciendo test a promesa', (done) => {
     getDataPromise()
       .then((name) => {
-        expect(name).toBe('Gerardo Gallegos')
+        expect(name).toBe('Pedro Cubillos')
         done()
       })
   })
 
   test('Haciendo test a promesa con expect', () => {
-    return expect(getDataPromise()).resolves.toBe('Gerardo Gallegos')
+    return expect(getDataPromise()).resolves.toBe('Pedro Cubillos')
   })
 
   test('Haciendo test a promesa rechazada', (done) => {
@@ -37,13 +37,13 @@ describe('Haciendo test a operaciones asinctronas', () => {
 
   test('Haciendo test a promesa resuelta con async await', async () => {
     const name = await getDataPromise()
-    expect(name).toBe('Gerardo Gallegos')
+    expect(name).toBe('Pedro Cubillos')
   })
 
   test('Haciendo test a promesa rechazada con async await', async () => {
     try {
       const name = await getDataPromiseError()
-      expect(name).toBe('Gerardo Gallegos')
+      expect(name).toBe('Pedro Cubillos')
     } catch (error) {
       expect(error).toBe('Error')
     }

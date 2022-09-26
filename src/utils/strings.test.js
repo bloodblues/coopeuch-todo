@@ -2,7 +2,7 @@ import { saluda, getId, despide } from './strings'
 
 describe('Pruebas de strings', () => {
 
-  const saludo = saluda('Gerardo')
+  const saludo = saluda('Pedro')
   const id = getId()
   const saludoDespide = despide()
 

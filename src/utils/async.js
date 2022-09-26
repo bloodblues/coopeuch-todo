@@ -2,7 +2,7 @@ import { setTimeout } from 'timers'
 
 export const getDataCallback = (callback) => {
   // Solicitud http a un API
-  const name = 'Gerardo Gallegos'
+  const name = 'Pedro Cubillos'
 
   setTimeout(() => {
     callback(name)
@@ -12,7 +12,7 @@ export const getDataCallback = (callback) => {
 export const getDataPromise = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve('Gerardo Gallegos')
+      resolve('Pedro Cubillos')
     }, 300)
   })
 }
