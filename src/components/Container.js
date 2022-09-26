@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Layout, Typography } from 'antd';
 import { connect } from 'react-redux'
 import { getId } from "../utils";
 import { addTodo, updateTodoText, updateTodoCheck, deleteTodo, deleteCheckedTodos } from "../redux/actions/todoActions";
 import TaskList from "./TaskList";
 import FormTodo from "./FormTodo";
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 const { Title } = Typography;
 
 
