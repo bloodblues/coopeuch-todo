@@ -25,7 +25,7 @@ const [newText,setNewText] = useState("")
   return (
     <Fragment>
       <Row align="middle" >
-        <Col  span={12} >
+        <Col  span={16} >
           <div style={{display:showEdit?"block":"none"}} >
           <Input defaultValue={todo.text} onChange={onChangeInput}  />
           </div>
@@ -68,12 +68,12 @@ const [newText,setNewText] = useState("")
             </label>
           </div>
         </Col>
-        <Col span={6}   >
+        <Col span={4}   >
           <Button style={{display:showEdit?"none":"block"}}  onClick={()=>setShowEdit(!showEdit)} >Editar</Button>
           <Button style={{display:showEdit?"block":"none"}} onClick={()=>onSaveText(newText,todo.id)} >Guardar </Button>
           
         </Col>
-        <Col span={6} >
+        <Col span={4} >
         <Button  onClick={()=>{deleteTodo(todo)}} >Eliminar</Button>
         </Col>
 
